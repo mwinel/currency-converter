@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: 'Inconsolata', monospace;
+  font-weight: normal;
+  background-color: #fff;
+}
+.container {
+  max-width: 450px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.header {
+  padding-top: 30%;
+  padding-bottom: 15px;
+  font-weight: 700;
+  text-align: center;
+  color: #333;
+}
+.form-field {
+  width: 100%;
+  border-left: 0px solid;
+  border-right: 0px solid;
+  border-top: 0px solid;
+  border-bottom: 2px solid rgba(0,0,0,0.16);
+  padding-bottom: 0.65rem;
+  padding-top: 0.65rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  background-color: #fff;
+  position: relative;
+  color: #507eb1;
+}
+.form-field #select{
+  border-top: 0px solid;
+}
+.custom-select {
+  display: inline-block;
+  width: 100%;
+  height: calc(2.25rem + 2px);
+  padding: .175rem 1.75rem .175rem .75rem;
+  line-height: 2;
+  color: #495057;
+  vertical-align: middle;
+  background: #fff;
+  border-left: 0px solid;
+  border-right: 0px solid;
+  border-top: 0px solid;
+  border-bottom: 2px solid rgba(0,0,0,0.16);
+  border-radius: 0px;
+}
+.custom-select p {
+  font-size: 20px;
+}
+.btn {
+  background-color: #007bff;
+  color: #fff;
+  padding-bottom: 0.6rem;
+  padding-top: 0.6rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-radius: 3px;
+}
+#convResult {
+  font-size: 40px;
+  font-weight: bold;
+  color: #ff6a2e;
+}
