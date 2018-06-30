@@ -18,4 +18,4 @@ Would you like to make **currency-coverter** a better option?
 See [CONTRIBUTING.md](#) for steps on how to contribute.
 
 ## UI
-[Check out the live project](#)
+[Check out the live project](https://mwinel.github.io/currency-converter/)
