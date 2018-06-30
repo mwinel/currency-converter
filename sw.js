@@ -1,9 +1,9 @@
 const CACHE_NAME = 'currency-converter-v1';
 const urlsToCache = [
-  '/',
-  '/css/style.css',
-  '/js/main.js',
-  'https://fonts.googleapis.com/css?family=Inconsolata:700'
+  'currency-converter/',
+  'currency-converter/css/style.css',
+  'currency-converter/js/main.js',
+  'currency-converter/https://fonts.googleapis.com/css?family=Inconsolata:700'
 ];
 
 // Install service worker
