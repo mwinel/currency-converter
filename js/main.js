@@ -1,3 +1,19 @@
+// Register service worker
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js')
+    .then((registration) => {
+      // Registration was successful
+      console.log('Registration successful: ', registration.scope);
+    } 
+    .catch(function(err) {
+      // Registration failed
+      console.log('Registration failed: ')
+    })
+  });
+}
+
+// Assign variables to html elements
 document.getElementById('convert').addEventListener("click", (e) => {
   e.preventDefault();
   let amount = document.getElementById('Amount');
