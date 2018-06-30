@@ -5,11 +5,11 @@ if ('serviceWorker' in navigator) {
     .then((registration) => {
       // Registration was successful
       console.log('Registration successful: ', registration.scope);
-    } 
+    }) 
     .catch((err) => {
       // Registration failed
       console.log('Registration failed: ')
-    })
+    });
   });
 }
 
