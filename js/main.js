@@ -1,7 +1,30 @@
+// IndexedDB
+// This works on all devices/browsers, and uses IndexedDBShim as a final fallback 
+var indexedDB = window.indexedDB || window.mozIndexedDB || window.webkitIndexedDB || window.msIndexedDB || window.shimIndexedDB;
+
+// Open the database
+let open = indexedDB.open("currency-converter-idb", 1);
+
+// Create the schema
+open.onupgradeneeded = () => {
+  let db = open.result;
+  let store = db.createObjectStore("currencyOS");
+};
+
+open.onsuccess = () => {
+  // Start a new transaction
+  let db = open.result;
+  let tx = db.transaction("currencyOS", "readwrite");
+  let store = tx.objectStore("currencyOS");
+
+  // Add some data
+  store.put("hello", "world");
+}
+
 // Register service worker
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/currency-converter/sw.js')
+    navigator.serviceWorker.register('/sw.js')
     .then((registration) => {
       // Registration was successful
       console.log('Registration successful: ', registration.scope);
