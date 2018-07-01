@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Inconsolata', monospace;
-  font-weight: normal;
+  font-weight: 400;
   background-color: #fff;
 }
 .container {
@@ -13,9 +13,11 @@ body {
 .header {
   padding-top: 30%;
   padding-bottom: 15px;
-  font-weight: 700;
   text-align: center;
   color: #333;
+}
+.header h2 {
+  font-weight: 700;
 }
 .form-field {
   width: 100%;
