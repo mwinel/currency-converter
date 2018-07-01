@@ -3,6 +3,8 @@ const urlsToCache = [
   '/currency-converter/',
   '/currency-converter/css/style.css',
   '/currency-converter/js/main.js',
+  'https://fonts.googleapis.com/css?family=Inconsolata:400,700',
+  'https://free.currencyconverterapi.com/api/v5/currencies'
 ];
 
 // Install service worker
